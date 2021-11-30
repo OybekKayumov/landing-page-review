@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  width: 90%;
+  background-color: #eee;
+}
+
+#header-img {
+  width: 350px;
+}
+
+#nav-bar {
+  flex-basis: 500px;
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  margin-left: 60px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+#form h2,
+input {
+  margin-bottom: 20px;
+}
+
+#form #email {
+  width: 279px;
+  height: 29px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+#submit {
+  background-color: #f1c40f;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+}
+
+#features {
+  width: 80vw;
+  margin-bottom: 50px;
+}
+
+/* #features fa {
+  width: 50px;
+} */
+
+.description {
+  margin-bottom: 20px;
+}
+
+#pricing {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  #header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+}
